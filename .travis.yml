@@ -2,6 +2,8 @@ language: csharp
 dotnet: 2.1.502
 # install:
 #   - pip install -r requirements.txt
+script:
+  - dotnet build AlexaSlackCommand.csproj
 deploy:
   provider: lambda
   function_name: "ucsb-sa-innovathon-alexa-bot-slack"
