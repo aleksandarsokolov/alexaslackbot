@@ -1,0 +1,11 @@
+language: csharp
+dotnet: 2.1.502
+cache: pip 
+# install:
+#   - pip install -r requirements.txt
+deploy:
+  provider: lambda
+  function_name: "ucsb-sa-innovathon-alexa-bot-slack"
+  region: "us-west-2"
+  role: "arn:aws:iam::035849207430:role/service-role/ucsb-sa-innovathon-alexa-bot-slack-role-iwcw1cyh"
+  handler_name: "handler"
