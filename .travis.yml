@@ -1,6 +1,5 @@
 language: csharp
 dotnet: 2.1.502
-cache: pip 
 # install:
 #   - pip install -r requirements.txt
 deploy:
