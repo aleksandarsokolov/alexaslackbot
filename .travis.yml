@@ -3,7 +3,7 @@ dotnet: 2.1.502
 install:
   - dotnet restore
 script:
-  - dotnet build AlexaSlackCommand/AlexaSlackCommand.csproj
+  - dotnet build 
 deploy:
   provider: lambda
   function_name: "ucsb-sa-innovathon-alexa-bot-slack"
